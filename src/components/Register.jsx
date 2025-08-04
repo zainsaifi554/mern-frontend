@@ -3,7 +3,8 @@ import React from 'react';
 import axios from 'axios';
 export default function Register() {
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const url = 'http://localhost:4000/';
+  // const url = 'http://localhost:4000/';
+  const url = 'https://mern-backend-ten-zeta.vercel.app/';
 
   // const onSubmit = (data) => {
   //   console.log("Register data:", data);

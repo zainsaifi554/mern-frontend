@@ -1,13 +1,12 @@
-import { useForm } from 'react-hook-form';
 import React from 'react';
+import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
+// If you need Register, keep this, otherwise remove it
 import Register from './Register.jsx';
-
 
 export default function Login() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
-
 
   const onSubmit = (data) => {
     console.log("Login data:", data);
@@ -16,9 +15,9 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen flex p-3 items-center justify-center bg-gray-100 ">
+    <div className="min-h-screen flex p-3 items-center justify-center bg-gray-100">
       <div className="bg-white p-7 rounded-lg w-full max-w-md shadow-2xl shadow-black/70">
-        <h2 className="text-2xl font-bold text-center mb-3 ">Login</h2>
+        <h2 className="text-2xl font-bold text-center mb-3">Login</h2>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           <div>
             <input

@@ -1,9 +1,9 @@
 import { Link, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import Register from './components/Register.jsx';
-import Login from './components/Login.jsx';  // ✅ Fixed casing
+import Login from './components/Login.jsx';
 import Home from './components/Home.jsx';
-import Navbar from './navbar.jsx';
+import Navbar from './Navbar.jsx'; // ✅ correct for file in src/
 
 function App() {
   return (

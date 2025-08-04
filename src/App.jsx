@@ -1,18 +1,16 @@
 import { Link, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import Register from './components/Register.jsx';
-import Login from './components/login.jsx';
+import Login from './components/Login.jsx';  // ✅ Fixed casing
 import Home from './components/Home.jsx';
 import Navbar from './navbar.jsx';
 
 function App() {
   return (
-    
-      <>
-     <Navbar />
-
+    <>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
@@ -21,7 +19,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
